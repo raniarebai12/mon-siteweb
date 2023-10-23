@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet"  href="style.css">
+    <title>Rebai rania</title>
+</head>
+<body>
+   <div class="container">
+      <div class="navbar">
+        <img src="images/logo.png"  class="logo">
+        <nav>
+            <ul>
+                <input type="button" id="Portfolio" value="Portfolio" onclick="afficherDiv()" class="btn">
+                <input type="button" id="tra" value="Traveaux" onclick="afficherDi()" class="btn">
+                <ul id="list">
+                    <li ><a onclick="afficherD()" href="#">Table</a></li>
+                    <li><a href="">TP2</a></li>
+                    <li><a href="">TP3</a></li><br><hr>
+                </ul>
+                <input type="button" value="Scène" onclick="" class="btn">
+                
+            </ul>
+        </nav>
+        <ul id="listeLiens"></ul>
+        
+         <br>
+        <hr class="ligne">
+      </div>
+      
+      <div class="content">
+        <img src="images/ph.jpg" class="feature-img">
+        <h1>Rebai rania</h1>
+        <p>Je suis rania étudiande d'inergénierie des données <br>et technologie web à l'université farhat abbas,<br>je vous présentez mes travaux à propos le module<br> web3d.Je dévellope aussi des sites web dans tous<br> les domaines,je faire aussi la photoghraphie et <br>leur édition.Je maitraisse les trois langues arabe ,<br> francais et l'anglais c'est pour cela je travaille la<br> traduction au freelance.</p>
+       
+    
+    </div>
+    <img  class="feature-img">
+
+    <div class="social-links">
+        <a href="https://www.facebook.com/Ra Nia">FACEBOOK</a>
+        <a href="https://www.instagram.com/__rania134__">INSTAGRAM</a>
+        <a href="https://www.snap.com/raniaa602">SNAP</a>
+    </div>
+    <div>
+        <h1 class="travaux">Ma Scène</h1>
+        
+    </div>
+   </div>
+   <script>
+   function afficherDiv() {
+    window.location.href = "portfoli.html";
+  }
+  function toggleListeLiens() {
+            var listeLiens = document.getElementById('list');
+            if (listeLiens.style.display === 'none' || listeLiens.style.display === '') {
+                listeLiens.style.display = 'block';
+            } else {
+                listeLiens.style.display = 'none';
+            }
+        }
+
+        // Écouteur d'événement pour le clic sur le bouton
+        document.getElementById('tra').addEventListener('click', toggleListeLiens);
+    
+        function afficherD() {
+    window.location.href = "table.html";
+  }
+
+  </script>
+    
+</body>
+</html>
