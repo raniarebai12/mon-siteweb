@@ -29,9 +29,16 @@ body{
     display: flex;
     align-items: center;
 }
-.logo{
+/* .logo{
     width: 160px;
     cursor: pointer;
+} */
+
+#logo{
+    width: 160px;
+    cursor: pointer;
+    margin-left: 18px ;
+    color: #232d60;
 }
 
 nav{
@@ -106,7 +113,7 @@ nav ul li a{
 }
 .travaux{
     text-align: center;
-    margin: 90px;
+    margin-top: 50px;
     
     color:#232d60 ;
 }
@@ -141,4 +148,29 @@ nav ul li a{
     padding: 12px 12px;
    
   
+}
+.scene{
+    margin-top: 30px;
+    width:1300px;
+    height: 600px;
+    background-color:#95abb4;
+    display: flex;
+    
+}
+.tra{
+    margin-top: 30px;
+    width:1300px;
+    height: 300px;
+    background-color:#c4dfe8;
+    display: flex;
+}
+#tab{
+  margin-top: 5px;
+  margin-left: 10px;
+  color: #232d60;
+}
+#ta{
+    height: 730px;
+    margin-top: 20px;
+    
 }
