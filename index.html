@@ -9,20 +9,17 @@
     <title>Rebai rania</title>
 </head>
 <body>
-   <div class="container">
+ 
+<div class="container">
       <div class="navbar">
-        <!-- <img src="images/logo.png"  class="logo"> -->
+       
         <h1 id="logo"> W3D</h1>
         <nav>
             <ul>
                 <input type="button" id="Portfolio" value="Portfolio" onclick="afficherDiv()" class="btn">
-                <input type="button" id="tra" value="Traveaux" onclick="afficherDi()" class="btn">
-                <ul id="list">
-                    <li ><a onclick="afficherD()" href="#">Table</a></li>
-                    <li><a href="">TP2</a></li>
-                    <li><a href="">TP3</a></li><br><hr>
-                </ul>
-                <input type="button" value="Scène" onclick="" class="btn">
+                <input type="button" id="tra" value="Table" onclick="afficherD()" class="btn">
+               
+                <input type="button" value="Scène" onclick="afficherDi()" class="btn">
                 
             </ul>
         </nav>
@@ -41,31 +38,72 @@
     </div>
     <img  class="feature-img">
 
-    <div class="social-links">
+    <!-- <div class="social-links">
         <a href="https://www.facebook.com/Ra Nia">FACEBOOK</a>
         <a href="https://www.instagram.com/__rania134__">INSTAGRAM</a>
         <a href="https://www.snap.com/raniaa602">SNAP</a>
+    </div> -->
+   <h1 class="projtes">mes travaux</h1>
+   <section class="sections">
+        <div class="travaux1">
+          <div class="carte">
+              <div class="img"><img src="images/prtfolio.jpg"></div>
+              
+            
+              <div class="titre">mon Portfolio</div>
+              <div class="box">
+                <button class="voir" id="port">Voir</button>
+              </div>
+            </div>
+            <div class="carte">
+              <div class="img"><img src="images/table.png"></div>
+              
+              
+              <div class="titre">Ma Table</div>
+              <div class="box">
+                <button class="voir" id="tab">Voir</button>
+              </div>
+            </div>
+            <div class="carte">
+              <div class="img"><img src="images/scène.png"></div>
+              
+              
+              <div class="titre">Ma Scène</div>
+              <div class="box">
+                <button class="voir" id="scen">Voir</button>
+              </div>
+            </div>
+          </div>
+             
+   </section>
+   <footer>
+    <div class="waves">
+      <div class="wave" id="wave1"></div>
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
     </div>
-    <div>
-        <h1 class="travaux">Ma Scène</h1>
-    </div>
+    <ul class="social-icon">
+      <li><a href="https://www.facebook.com/Ra Nia"><ion-icon name="logo-facebook"></ion-icon></a></li>
+      <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+      <li><a href="https://www.instagram.com/__rania134__"><ion-icon name="logo-instagram"></ion-icon></a></li>
+      <li><a href="https://www.snap.com/raniaa602"><ion-icon name="logo-snapchat"></ion-icon></a></li>
+    </ul>
+    <ul class="menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Team</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <p>@2023 Online Site | Contact Me</p>
+   </footer>
+ </div>
+ <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+ <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-   <div class="scene">
-      <hr>
-   </div>
-
-   <div>
-     <h1 class="travaux">mes travaux</h1>
-   </div>
-
-    <div class="tra">
-      <hr>
-      <!-- <h2 id="tab">Table</h2> -->
-      <img src="images/table.png" id="ta">
-    </div>
-
-   </div>
    <script>
+
    function afficherDiv() {
     window.location.href = "portfoli.html";
   }
@@ -78,14 +116,41 @@
             }
         }
 
-        // Écouteur d'événement pour le clic sur le bouton
+        
         document.getElementById('tra').addEventListener('click', toggleListeLiens);
     
         function afficherD() {
     window.location.href = "table.html";
   }
+  function afficherDi() {
+    window.location.href = "donut.html";
+  }
+  
+  var bouton = document.getElementById('port');
 
-  </script>
+    
+    bouton.addEventListener('click', function() {
+      
+      window.location.href = 'portfoli.html'; 
+    });
+
+    var bouton = document.getElementById('tab');
+
+    
+    bouton.addEventListener('click', function() {
+      
+      window.location.href = 'table.html'; 
+    });
+
+    var bouton = document.getElementById('scen');
+
+    
+    bouton.addEventListener('click', function() {
+      
+      window.location.href = 'donut.html'; 
+    });
+
+  </script> 
     
 </body>
 </html>
